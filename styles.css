@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Anton&family=Medula+One&display=swap');
+
+
+
+
+
+.custom-navbar-spacing{
+  margin-right: 90px !important;
+}
+
+.navbar-nav .nav-link{
+
+transition: all 0.3s ease;
+
+}
+
+ .navbar-nav .nav-link:hover{
+color: aqua;
+transform: scale(1.1);
+background-color: rgb(246, 147, 147);
+} 
+
+
+
+
+.hero-section {
+  padding: 0px 0; /* المساحة العلوية والسفلية */
+  background-color: #f4f4f4; /* لون الخلفية */
+}
+
+.hero-section h1 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #323337; /* لون النص */
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #6c757d; /* لون الفقرة */
+  margin: 20px 0; /* مسافة بين الفقرة والعناصر الأخرى */
+}
+
+.hero-section .btn {
+  padding: 15px 40px;
+  background-color: rgb(245, 43, 12);
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+margin-left: 40px;
+}
+
+.hero-section .hero-text{
+  margin-right: 40px;
+}
+
+.hero-section .btn:hover{
+  background-color: #323337;
+}
+
+/* end watch */
+
+
+
+
+
+/* start section 2 */
+.New-products{
+  font-family: "Anton", sans-serif;
+
+}
+
+.product-img{
+  transition: transform 0.3s ease;
+}
+
+.product-img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* end section 2 */
+
+
+/* start photo */
+/* التحكم في أحجام الصور */
+.watch-img {
+  width: 100%;
+  height: 600px; /* تعديل لجعل الارتفاع يتناسب مع المحتوى */
+  transition: transform 0.3s ease;
+}
+
+.tall-img {
+  height: 600px; /* حجم الصورة الطويلة */
+  object-fit: cover;
+}
+
+.small-img {
+  height: 290px; /* حجم الصور الصغيرة */
+  object-fit: cover;
+}
+
+/* تنسيق عام للقسم */
+.watch-section {
+  padding: 20px;
+}
+
+.watch-img:hover {
+  transform: scale(1.1); /* تكبير الصورة عند التحويم */
+}
+
+/* إضافة overflow: hidden لجعل الصورة تكبر داخل مساحة العمود */
+.col-md-6,
+.col-md-3 {
+  overflow: hidden; /* إخفاء المحتوى الزائد */
+}
+/* end photo */
+
+
+/* start cart */
+
+.h111{
+  font-family: "Anton", sans-serif;
+}
+
+.h555{
+  font-family: "Alata", sans-serif;
+
+}
+
+.p111{
+  font-family: "Medula One", system-ui;
+  font-size: 17px;
+  color: black;
+}
+
+
+.product-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.product-card img {
+  width: 350px; /* تعديل حجم الصورة */
+  height: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.01);
+}
+
+.product-card .favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #f65c41;
+  display: none;
+}
+
+.product-card:hover .favorite-icon {
+  display: block;
+}
+
+.product-card .image-container::after{
+
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 100%;
+height: 20px;
+background-color: #fc5639;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.5s
+ease-in-out;
+
+}
+
+
+
+.product-card:hover .image-container 
+::after{
+  transform: scaleX(1);
+}
+
+.product-card .add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fc5639;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0s 0.5s; /* تأثير أقوى وزمن أطول */
+}
+
+.product-card:hover .add-to-cart {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.4s
+   ease-in-out, transform 0.4s ease-in-out, visibility 0s 0s; /* سرعة انتقال عند الظهور */
+}
+
+.product-card:hover {
+  z-index: 1; /* اجعل العنصر فوق باقي العناصر */
+}
+/* end cart */
+
+
+/* start section */
+
+
+
+.hero-section1 {
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+  padding: 0; 
+  background-color: white; 
+  height: 700px; /* الحفاظ على الارتفاع */
+  width: 100%;
+}
+
+.hero-section1 h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #323337;
+}
+
+.hero-section1 p {
+  font-size: 19px;
+  color: #6c757d;
+  margin: 20px 0;
+}
+
+.hero-section1 .btn {
+  padding: 15px 40px;
+  background-color: rgb(245, 43, 12);
+}
+
+.hero-section1 img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.hero-section1 .hero-text {
+  margin-right: 40px;
+}
+
+.hero-section1 .btn:hover {
+  background-color: #323337;
+}
+
+
+/* end section */
+
+
+/* start section */
+
+
+
+.hero-section2 {
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+  padding: 0; 
+  background-color: white; 
+  height: 700px; /* الحفاظ على الارتفاع */
+  width: 100%;
+}
+
+.hero-section2 h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #323337;
+}
+
+.hero-section2 p {
+  font-size: 17px;
+  color: #6c757d;
+  margin: 20px 0;
+}
+
+.hero-section2 .btn {
+  padding: 15px 40px;
+  background-color: rgb(245, 43, 12);
+}
+
+.hero-section2 img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.hero-section2 .hero-text {
+  margin-right: 40px;
+}
+
+.hero-section2 .btn:hover {
+  background-color: #323337;
+}
+
+
+
+/* start section */
+
+/* لون الخلفية */
+.feature-box {
+  background-color: rgb(245, 43, 12) !important;
+  height: 200px;
+  min-width: 80%;
+margin: 0 auto;
+}
+
+/* حجم الأيقونات */
+.icon-size {
+  font-size: 50px; /* يمكنك تعديل الرقم هنا لتغيير حجم الأيقونات */
+  margin-bottom: 10px;
+}
+
+/* تنسيق العناوين */
+h3 {
+  margin-top: 10px;
+  font-size: 18px; /* يمكنك تعديل الرقم هنا لتغيير حجم النص */
+}
+
+/* تنسيق النص */
+p {
+  color: #fff7f7;
+  font-size: 14px; /* يمكنك تعديل الرقم هنا لتغيير حجم النص */
+}
+
+/* enad section */
+
+
+
+
+/* start footer */
+/* General Footer Styles *//* General Footer Styles *//* General Footer Styles *//* General Footer Styles *//* General Footer Styles */
+.footer-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* توسيط اللوجو */
+}
+
+.footer-text {
+  text-align: center; /* توسيط النص تحت اللوجو */
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.footer-title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center; /* توسيط العنوان */
+}
+
+.footer-link {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 15px;
+  text-align: center; /* توسيط الروابط */
+  padding: 10px 0;
+}
+
+.footer-link:hover {
+  color: #ff0000;
+}
+
+/* Footer Content Section */
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* توزيع الأقسام بالتساوي */
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 250px; /* تحديد عرض ثابت لكل قسم */
+  text-align: center; /* توسيط كل المحتويات داخل القسم */
+}
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  min-height: 100px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #666;
+  margin-right: 100px; /* تقليل المسافة بين حقوق الملكية والأيقونات */
+}
+
+.footer-author {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.footer-author:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* استخدام gap لتقليل المسافة بين الأيقونات */
+  margin-left: 0; /* إزالة أي هوامش إضافية */
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff0000;
+}
+
+/* Footer General Styles */
+footer {
+  min-height: 200px;
+}
